@@ -1,0 +1,32 @@
+@use "style";
+
+.question_area {
+   position: relative;
+
+   img {
+      position: absolute;
+      background-color: style.$blue-2;
+
+      padding: 1.5rem 1.2rem;
+
+      cursor: pointer;
+
+      &:hover{
+         border: .2rem solid style.$blue-2;
+         background-color: style.$blue-1;
+
+         padding: 1.3rem 1rem;
+      }
+   }
+
+   img.horizontal__scroll__right {
+      right: 0;
+      top: 50%;
+   }
+
+   img.horizontal__scroll__left {
+      left: 0;
+      top: 50%;
+   }
+}
+
